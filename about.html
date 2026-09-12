@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Luvine Beauty - About Us</title>
+
+    <style type="text/css">
+
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color:black;
+        }
+
+
+
+        .heading {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 15px 40px;
+            min-height: 120px;
+        }
+
+        .heading img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h1 {
+            color: deeppink;
+            text-shadow: 2px 2px 5px red;
+            font-size: 38px;
+            flex: 1;
+        }
+
+        .links nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: deeppink;
+        }
+
+
+        .aboutheading {
+            text-align: center;
+            padding: 45px 20px 20px;
+        }
+
+        .aboutheading h2 {
+            font-size: 40px;
+            color: deeppink;
+            text-shadow: 2px 2px 5px red;
+        }
+
+        .aboutheading p {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1100px;
+            margin: 20px auto 50px;
+            padding: 30px;
+        }
+
+        .intro img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid deeppink;
+        }
+
+        
+
+        .intro-text h2 {
+            color: deeppink;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .intro-text p {
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+
+
+        .questions {
+            text-align: center;
+            background-color:deeppink;
+            padding: 40px 20px;
+            margin: 20px 0 50px;
+        }
+
+        .questions h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+       .callbutton {
+    background-color: deeppink;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.callbutton:hover {
+    background-color: black;
+}
+
+
+
+        .teamintroduction {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 35px;
+            padding: 0 20px;
+        }
+
+        .teamintroduction h2 {
+            font-size: 32px;
+            color: deeppink;
+            text-shadow: 2px 2px 5px red;
+            margin-bottom: 12px;
+        }
+
+        .teamintroduction p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+
+
+
+        .allteam {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 30px 60px;
+        }
+
+        .member1,.member2, .member3,.member4 {
+            width: 23%;
+            text-align: center;
+            background-color: deeppink;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        
+
+        .member1 img,
+        .member2 img,
+        .member3 img,
+        .member4 img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid deeppink;
+            margin-bottom: 15px;
+        }
+
+        .allteam h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .allteam p {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 8px;
+            font-size: 20px;
+        }
+
+       
+
+
+
+        @media screen and (max-width: 900px) {
+
+            .heading {
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .links nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+            .intro {
+                gap: 25px;
+                padding: 25px;
+            }
+
+            .intro img {
+                width: 280px;
+                height: 280px;
+            }
+
+            .allteam {
+                flex-wrap: wrap;
+            }
+
+            .member1,
+            .member2,
+            .member3,
+            .member4 {
+                width: 45%;
+            }
+
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+
+            .heading {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .heading img {
+                width: 80px;
+                height: 80px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+
+            .links nav {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            nav a {
+                display: block;
+                padding: 7px;
+            }
+
+
+
+
+            .aboutheading {
+                padding: 35px 15px 15px;
+            }
+
+            .aboutheading h2 {
+                font-size: 30px;
+            }
+
+
+            .intro {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+
+            .intro img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .introtext p {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .introtext h2 {
+                font-size: 25px;
+            }
+
+
+
+            .questions {
+                padding: 30px 15px;
+            }
+
+            .questions h2 {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+
+            .teamintroduction {
+                margin-bottom: 20px;
+            }
+
+            .teamintroduction h2 {
+                font-size: 28px;
+            }
+
+            .allteam {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .member1,
+            .member2,
+            .member3,
+            .member4 {
+                width: 100%;
+            }
+
+
+            footer {
+                font-size: 13px;
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .aboutheading h2 {
+                font-size: 26px;
+            }
+
+            .intro img {
+                width: 210px;
+                height: 210px;
+            }
+
+            .member1 img,
+            .member2 img,
+            .member3 img,
+            .member4 img {
+                width: 140px;
+                height: 140px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <div class="heading">
+
+        <img src="logo.png" alt="Luvine Beauty Logo">
+
+        <h1>Luvine Beauty Shop</h1>
+
+        <div class="links">
+
+            <nav>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="Products.html">Products</a>
+                 <a href="contacts.html">Contacts</a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <div class="aboutheading">
+
+        <h2>ABOUT US</h2>
+
+        <p>
+            Discover the story behind Luvine Beauty Products.
+        </p>
+
+    </div>
+
+    <div class="intro">
+
+        <img src="lady.jpg" alt="Luvine Beauty">
+
+        <div class="introtext">
+
+            <h2>Beauty, Confidence & You</h2>
+
+            <p>
+                At Luvine Beauty, we believe in empowering your
+                beauty journey. Our curated collection of radiant
+                products is designed to enhance your natural allure
+                and foster timeless confidence.
+            </p>
+
+            <br>
+
+            <p>
+                At Luvine Beauty, we believe that beauty is more
+                than just appearance. It is about confidence,
+                self-expression, and feeling comfortable in your
+                own skin. Our carefully selected collection of
+                beauty and skincare products is designed to enhance
+                your natural features while helping you create a
+                routine that feels uniquely yours.
+            </p>
+
+            <br>
+
+            <p>
+                From everyday essentials to products for special
+                occasions, we bring you quality, affordable beauty
+                solutions that make every moment a little brighter.
+                Discover the glow within and let your natural beauty
+                shine effortlessly.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="questions">
+
+        <h2>
+            Have Questions? Call us and our beauty experts
+            will be happy to assist you.
+        </h2>
+
+        <a href="contact.html" class="callbutton">Call Us for Free</a>
+
+    </div>
+
+
+    <div class="team-introduction">
+
+        <h2>Meet Our Team</h2>
+
+        <p>
+            Meet our dedicated team of beauty enthusiasts who are
+            passionate about helping you look and feel your best.
+            Our team works together to bring you quality beauty
+            products and excellent customer service.
+        </p>
+
+    </div>
+
+
+    <div class="allteam">
+
+
+        <div class="member1">
+
+            <img src="person1.jpg" alt="Macaulay Herring">
+
+            <h4>Macaulay Herring</h4>
+
+            <p>CEO & FOUNDER</p>
+
+        </div>
+
+
+
+        <div class="member2">
+
+            <img src="person2.jpg" alt="Alya Levine">
+
+            <h4>Alya Levine</h4>
+
+            <p>CEO</p>
+
+        </div>
+
+
+
+        <div class="member3">
+
+            <img src="person3.jpg" alt="Rose Hernandez">
+
+            <h4>Rose Hernandez</h4>
+
+            <p>MANAGER</p>
+
+        </div>
+
+
+
+        <div class="member4">
+
+            <img src="person4.jpg" alt="Elen Benitez">
+
+            <h4>Elen Benitez</h4>
+
+            <p>ASSISTANT MANAGER</p>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+
+                <p>
+         WWW.2026@Luvine Beauty Shop
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

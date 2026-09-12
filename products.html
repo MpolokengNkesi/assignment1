@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Luvine Makeup - Products</title>
+
+    <style type="text/css">
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color:black;
+        }
+
+
+        .heading {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 15px 40px;
+            min-height: 120px;
+        }
+
+        .heading img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h1 {
+            color: deeppink;
+            text-shadow: 2px 2px 5px red;
+            font-size: 38px;
+            flex: 1;
+        }
+
+
+        
+
+        .links nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: deeppink;
+        }
+
+
+
+        .title {
+            text-align: center;
+            margin: 45px 0 25px;
+        }
+
+        .title h2 {
+            color: deeppink;
+            font-size: 30px;
+            text-shadow: 2px 2px 5px red;
+        }
+
+        .title p {
+            margin-top: 8px;
+        }
+
+
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 10px 30px 30px;
+        }
+
+        .category {
+            width: 150px;
+            text-align: center;
+            color: deeppink;
+            padding: 15px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+       
+
+        .category img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid deeppink;
+        }
+
+        .category h3 {
+            margin-top: 10px;
+            font-size: 23px;
+        }
+
+
+        .collection {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 10px 30px 30px;
+        }
+
+
+
+        .product {
+            width: 250px;
+            background-color: white;
+            border: 3px solid deeppink;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+            transition: 0.3s;
+        }
+
+       
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .product p {
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .product .price {
+            color: deeppink;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+
+
+
+    footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 8px;
+            font-size: 20px;
+        }
+
+       
+        
+
+
+        @media screen and (max-width: 900px) {
+
+            .heading {
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .links nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+            .product {
+                width: 42%;
+            }
+
+            .category {
+                width: 130px;
+            }
+
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+
+            .heading {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .heading img {
+                width: 80px;
+                height: 80px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+
+            .links nav {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            nav a {
+                display: block;
+                padding: 7px;
+            }
+
+
+            .categories {
+                gap: 10px;
+                padding: 10px 15px 25px;
+            }
+
+            .category {
+                width: 120px;
+            }
+
+            .category img {
+                width: 90px;
+                height: 90px;
+            }
+
+
+            .collection {
+                flex-direction: column;
+                padding: 10px 20px 30px;
+            }
+
+            .product {
+                width: 100%;
+                max-width: 350px;
+                margin: auto;
+            }
+
+            .product img {
+                height: 220px;
+            }
+
+
+
+            .title h2 {
+                font-size: 26px;
+            }
+
+
+            .button {
+                padding: 12px 28px;
+                font-size: 16px;
+            }
+
+        }
+
+
+        @media screen and (max-width: 400px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .intro h2 {
+                font-size: 24px;
+            }
+
+            .category {
+                width: 100px;
+            }
+
+            .category img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .product img {
+                height: 190px;
+            }
+
+            .title h2 {
+                font-size: 23px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="heading">
+
+        <img src="logo.png" alt="Luvine Beauty Logo">
+
+        <h1>Luvine Beauty Shop</h1>
+
+        <div class="links">
+
+            <nav>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="Products.html">Products</a>
+                 <a href="contacts.html">Contacts</a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <div class="title">
+
+        <h2>SHOP BY CATEGORIES</h2>
+
+        <p>Find the perfect products for your beauty routine.</p>
+
+    </div>
+
+
+    <div class="categories">
+
+
+        <div class="category">
+
+            <img src="skincare.jpg" alt="Skincare">
+
+            <h3>Skincare</h3>
+
+        </div>
+
+
+
+        <div class="category">
+
+            <img src="makeup2.jpg" alt="Makeup">
+
+            <h3>Makeup</h3>
+
+        </div>
+
+
+
+        <div class="category">
+
+            <img src="haircare.jpg" alt="Haircare">
+
+            <h3>Haircare</h3>
+
+        </div>
+
+
+
+        <div class="category">
+
+            <img src="accessories.jpg" alt="Accessories">
+
+            <h3>Accessories</h3>
+
+        </div>
+
+
+
+        <div class="category">
+
+            <img src="bodycare.jpg" alt="Body Care">
+
+            <h3>Body Care</h3>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="title">
+
+        <h2>FEATURED COLLECTION</h2>
+
+        <p>Our carefully selected beauty favourites.</p>
+
+    </div>
+
+
+    <div class="collection">
+
+
+        <div class="product">
+
+            <img src="Hyaluronic Acid Serum.jpg"
+                 alt="Hyaluronic Acid Serum">
+
+            <h3>Hyaluronic Acid Serum</h3>
+
+            <p class="price">M99.99</p>
+
+            <p>
+                Hydrates and refreshes your skin.
+            </p>
+
+        </div>
+
+
+
+        <div class="product">
+
+            <img src="makeupbrushes.jpg"
+                 alt="Makeup Brush Set">
+
+            <h3>Makeup Brush Set</h3>
+
+            <p class="price">M130.00</p>
+
+            <p>
+                Soft brushes for easy makeup application.
+            </p>
+
+        </div>
+
+
+
+        <div class="product">
+
+            <img src="nightcream.jpg"
+                 alt="Collagen Night Cream">
+
+            <h3>Collagen Night Cream</h3>
+
+            <p class="price">M120.00</p>
+
+            <p>
+                Helps keep your skin soft and smooth.
+            </p>
+
+        </div>
+
+
+    <div class="title">
+
+        <h2>BEST SELLERS</h2>
+
+        <p>Our customers' favourite beauty essentials.</p>
+
+    </div>
+
+
+    <div class="collection">
+
+
+        <div class="product">
+
+            <img src="serum.jpg"
+                 alt="Hyaluronic Acid Serum">
+
+            <h3>Hyaluronic Acid Serum</h3>
+
+            <p class="price">M99.99</p>
+
+            <p>
+                Hydrates and refreshes your skin.
+            </p>
+
+        </div>
+
+
+        <div class="product">
+
+            <img src="nightcream.jpg"
+                 alt="Collagen Night Cream">
+
+            <h3>Collagen Night Cream</h3>
+
+            <p class="price">M120.00</p>
+
+            <p>
+                Perfect for your nighttime skincare routine.
+            </p>
+
+        </div>
+
+
+
+        <div class="product">
+
+            <img src="lipstick.jpg"
+                 alt="Matte Lipstick">
+
+            <h3>Matte Lipstick</h3>
+
+            <p class="price">M80.00</p>
+
+            <p>
+                Beautiful colour with a smooth finish.
+            </p>
+
+        </div>
+
+
+    </div>
+
+    <div class="title">
+
+        <h2>NEW ARRIVALS</h2>
+
+        <p>Fresh products added to our collection.</p>
+
+    </div>
+
+
+    <div class="collection">
+
+
+        <div class="product">
+
+            <img src="primer.jpg"
+                 alt="Glow Primer">
+
+            <h3>Glow Primer</h3>
+
+            <p class="price">M90.00</p>
+
+            <p>
+                Creates a smooth base for your makeup.
+            </p>
+
+        </div>
+
+
+
+        <div class="product">
+
+            <img src="eyeshadow.jpg"
+                 alt="Velvet Eyeshadow Palette">
+
+            <h3>Velvet Eyeshadow Palette</h3>
+
+            <p class="price">M150.00</p>
+
+            <p>
+                Beautiful shades for every makeup look.
+            </p>
+
+        </div>
+
+
+        <div class="product">
+
+            <img src="lipgloss.jpg"
+                 alt="Lip Gloss">
+
+            <h3>Lip Gloss</h3>
+
+            <p class="price">M60.00</p>
+
+            <p>
+                Gives your lips a beautiful glossy finish.
+            </p>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+
+       <p>
+         WWW.2026@Luvine Beauty shop
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

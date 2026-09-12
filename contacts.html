@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Luvine Beauty - Contact Us</title>
+
+    <style type="text/css">
+
+       
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 15px 40px;
+            min-height: 120px;
+        }
+
+       .heading img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h1 {
+            color: deeppink;
+            font-size: 38px;
+            text-shadow: 2px 2px 5px red;
+            flex: 1;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px 5px;
+        }
+
+        nav a:hover {
+            color: deeppink;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .contact h2 {
+            color: deeppink;
+            font-size: 32px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px red;
+        }
+
+        .intro {
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .contactcontainer {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contactbox {
+            width: 300px;
+            padding: 25px;
+            background-color: deeppink;
+            border-radius: 10px;
+        }
+
+        .contactbox h3 {
+            color: white;
+        }
+
+        .contactbox p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .contactbox a {
+            color: deeppink;
+            text-decoration: none;
+            font-weight: bold;
+
+
+        }
+
+        .formbox {
+            width: 300px;
+            padding: 30px;
+            background-color: pink;
+            text-align: left;
+        }
+
+        .formbox h3 {
+            text-align: center;
+            color: deeppink;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gray;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: deeppink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .back p {
+            margin-bottom: 15px;
+        }
+
+        .aboutbutton {
+            background-color: deeppink;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        
+
+        .message {
+            text-align: center;
+            margin: 30px 20px;
+            padding: 25px;
+        }
+
+        .message h3 {
+            color: deeppink;
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .heading {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .heading img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+
+            nav {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+
+            .contact {
+                padding: 35px 15px;
+            }
+
+            .contact h2 {
+                font-size: 28px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .contactcontainer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-box,
+            .form-box {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .heading img {
+                width: 70px;
+                height: 70px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 5px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .contact h2 {
+                font-size: 25px;
+            }
+
+            .contact-box,
+            .form-box {
+                width: 100%;
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heading">
+
+        <img src="logo.png" alt="Luvine Beauty Logo">
+
+        <h1>Luvine Beauty Shop</h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+    <div class="contact">
+
+        <h2>CONTACT US</h2>
+
+        <p class="intro">
+            We would love to hear from you.
+            Contact Luvine Beauty for more information about our products.</p>
+
+        <div class="contactcontainer">
+
+            <div class="contactbox">
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Maseru,Qoaling<br> </p>
+
+                <h3>Contacts:</h3>
+                <p>
+                    +266 56789023
+                </p>
+
+                
+
+                <h3><i>Business Hours</i></h3>
+
+                <p><i>
+                    Monday - Friday<br>
+                    8:00 AM - 5:00 PM
+                </i></p>
+
+                <p><i>
+                    Saturday<br>
+                    9:00 AM - 2:00 PM
+               </i> </p>
+
+
+                <p><i>
+                    Sunday<br>
+                    closed
+                </i></p>
+
+
+
+            </div>
+
+            <div class="formbox">
+
+                <h3>Send Us a Message</h3>
+
+                <form>
+
+                    <label for="fname">First name:</label><br>
+
+                    <input type="text" id="fname" name="fname"><br><br>
+
+                    <label for="lname">Last name:</label><br>
+
+                    <input type="text" id="lname" name="lname"><br><br>
+
+                    <label for="email">Email:</label><br>
+
+                    <input type="text" id="email" name="email"><br><br>
+
+                    <label for="message">Message:</label><br>
+
+                    <textarea id="message" name="message"></textarea><br><br>
+
+                    <input type="submit" value="Send Message">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="back">
+
+            <p>Want to know more about us?</p>
+
+            <a href="about.html" class="aboutbutton">
+                Go Back to About Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="message">
+
+        <h3>Your Beauty, Your Rules</h3>
+
+        <p>
+            Thank you for choosing Luvine Beauty.
+            We are here to help you find beauty products
+            that make you feel confident and beautiful.
+        </p>
+
+    </div>
+
+    <footer>
+<p>
+         WWW.2026@Luvine Beauty shop
+        </p>
+    </footer>
+
+</body>
+
+</html>
